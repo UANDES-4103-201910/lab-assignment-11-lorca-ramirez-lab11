@@ -11,16 +11,32 @@
     </div>
   <% end %>
 
+<div class="container">
+
+<div class="col-5">
+
+</div>
+<div class="col-4">
   <%= form.label :name %>
   <%= form.text_field :name %>
   <%= form.label :description %>
   <%= form.text_area :description, cols: 60, rows: 10 %>
   <%= form.label :start_date %>
   <%= date_select :event, :start_date %>
+
   <%= form.label :event_venue_id %>
   <%= form.select(:event_venue_id, options_from_collection_for_select(EventVenue.all, :id, :name))%>
+  <!--imagenes-->
+  <%= form.label :images %>
+  <%= form.file_field :images, multiple: true %>
 
   <div class="actions">
     <%= form.submit %>
   </div>
+
+</div>
+<div class="col-4">
+
+</div>
+
 <% end %>

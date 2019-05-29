@@ -3,6 +3,12 @@
 <% end %>
 
 <h2><%=@event.name%></h2>
+
+<!-- Mostrar imagenes -->
+<% (0...@event.images.count).each do |image| %>
+  <%= image_tag(@event.images[image]) %>
+<% end %>
+
 <p><%=@event.description%></p>
 <p><%=@event.start_date%></p>
 
