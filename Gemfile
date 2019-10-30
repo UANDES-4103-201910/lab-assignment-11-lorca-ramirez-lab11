@@ -38,7 +38,7 @@ gem 'bootstrap', '~> 4.3.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-gem 'devise', '~> 4.6'
+gem 'devise', '~> 4.7'
 gem 'cancancan', '~> 3.0'
 
 group :development, :test do
